@@ -1,1 +1,229 @@
-<h1> Hello <h2>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Eddie Browser Outfitters</title>
+    <meta name="robots" content="noindex,nofollow" />
+	<!-- below is a google font, go to https://www.google.com/fonts to get yours! -->
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/default.css" />
+    <style type="text/css">
+		body{
+			font-family: 'Open Sans Condensed', sans-serif;/* required for google font */
+			font-size:20px;
+			line-height: 2.0;
+		}
+		.masthead{
+			font-family: 'Open Sans Condensed', sans-serif;/* required for google font */
+			font-size:3em;
+		}
+	
+		#logo{
+			float:right;
+			display:inline-block;
+			padding:2px;
+			max-width:100px; /* actual size of image */
+			width:20%; /* approximate size taken on screen in maximum view */
+		}
+	
+		#wear {
+			float:left;
+			display:inline-block;
+			padding:20px;
+			max-width:300px; /* actual size of image */
+			width:33%; /* approximate size taken on screen in maximum view */
+		}
+		footer {
+			text-align:center;
+			clear:both; /* ride below all items */
+			}
+		nav{
+			text-align:center; /* centers the nav */
+		}
+		
+		nav ul {
+				list-style:none; /* removes the bullets */
+			}
+		nav ul li
+			{
+				display:inline-block; /* makes horizontal, but able to declare margins */
+				margin:0 2%; /* margin left-right, gets smaller as necessary */
+			}
+		nav a:hover{
+			text-decoration: none;
+		}	
+		.cen{
+			position: inherit;
+		}
+		h3 {
+			text-align: center;
+		}
+    </style>
+   
+    <!--[if ltIE9]>
+       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+     <![endif]-->
+</head>
+<body>
+	<header role="banner">
+	    <img src="images/four-seasons.gif" alt="Seasonal Logo Goes Here" class="flexible" id="logo" />
+		<h1 class="masthead">Eddie Browser</h1>
+		<nav>
+			<ul>
+				<li class="seasons"><a href="Default">Default</a></li>
+				<li class="seasons"><a href="Spring">Spring</a></li>
+				<li class="seasons"><a href="Summer">Summer</a></li>
+				<li class="seasons"><a href="Fall">Fall</a></li>
+				<li class="seasons"><a href="Winter">Winter</a></li>
+				<li class="seasons"><a href="Christmas">Christmas</a></li>
+
+			</ul>
+		</nav>
+	</header>
+    <main role="main">
+		<p>
+			<div>
+				<form id="dateForm">
+					<label for="dateField">
+						
+						Input Date:<input type="text" name="dateField" id="dateField" />
+					</label>
+						<input type="submit" value="submit"/>
+			</div>
+			
+			</form>
+		 <header><h3>Outfitter for All Seasons!</h3></header>
+		 <p>
+		 
+		<!--
+			The colors of the seasonal images are as follows:
+		 <ul>
+			<li>Spring: <b>#2B7129</b></li>
+			<li>Summer: <b>#EBA52B</b></li>
+			<li>Fall: <b>#A81124</b></li>
+			<li>Winter: <b>#005393</b></li>
+		 </ul>
+		-->
+		 </p>
+		 <p>
+			<h1> Did you know? </h1>
+
+			June 21 marks the day when the Earth is turned the most toward the Sun. This is known as Summer Solstice. It is the longest, sunniest day of the year. December 21 marks the day when the Earth is turned the farthest from the Sun. This is known as Winter Solstice. It is the shortest, darkest day of the year.
+		   The four seasons are spring, summer, fall and winter.<br>
+		   <p>	<img src="https://wallpapercave.com/wp/wp4799428.jpg" alt="Season Wear Goes Here" id="wear" />
+		   </p>
+	   
+		   In places like Arizona and Texas, the seasons don’t change much. Some plants stay green all year round and it doesn’t usually snow. These places have a wet, rainy season during the summer, known as monsoon season.
+		   Plants and trees lose their leaves in response to the shortening days and cooler temperatures of fall.<br>
+   
+		   Trees and plants open new leaf and flower buds as the weather warms in spring.
+   
+		   Winter is a hard time for animals. They have a hard time finding food. Many hibernate or sleep more.
+		   Summer Season Image
+		   Summer is usually warm and mild. This is the season when most of the food we eat grows.
+   
+   
+		   In the fall, people harvest vegetables from gardens and fruit from orchards.
+   
+		   Winter is a hard time for animals. They have a hard time finding food. Many hibernate or sleep more.
+   
+			Spring is usually rainy. People wear rain coats and boots. They start planting gardens. Summer is usually warm and mild. This is the season when most of the food we eat grows. Farmers are busy working all summer long. In the fall, people harvest vegetables from gardens and fruit from orchards.
+   
+		   They get out blankets and put away summer toys and tools. In the winter, people spend more time indoors. A hundred years ago, people ate the food they had grown and saved during the summer. Today, we can get fresh food from the grocery store year-round.
+   
+	
+   
+		   <h2 class="cen">Fun Facts about Sandstorms</h2> 
+		   <ul class="cen">
+		   <li> Sandstorms can destroy property and hurt people.</li>
+		   <li> Sandstorms lift the topsoil off the land. This topsoil is needed to grow crops.</li>
+		   <li>Sandstorms happen most often in the summer.</li>
+		   <li>Sandstorms are most common in dry, hot regions like the Sahara desert.</li>
+   
+		   </ul>
+   
+		 </p>
+			
+
+	
+		<!--<p>
+		Text provided by <a href="http://hipsum.co/" target="_blank">Hipster Ipsum</a>
+		</p\
+		-->
+     </main>
+    <footer>
+      <small>&copy; 2013, All Rights Reserved ~
+      <a href="http://validator.w3.org/check/referer" target="_blank">Valid HTML</a> ~
+      <a href="http://jigsaw.w3.org/css-validator/check?uri=referer" target="_blank">Valid CSS</a>
+      </small>
+    </footer>
+    <!-- END Footer -->
+	
+	<script src="http://code.jquery.com/jquery-latest.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	$("document").ready(function(){
+		$('.seasons a').click(function(e){//find all a tags inside class of seasons
+            e.preventDefault();//stop default submission, prevent a link from follwing the URL 
+			var season = $(this).attr("href");//contents of href attribute of this element
+			//alert(season);
+			season = season.toLowerCase();
+			switch(season){
+				case'spring':
+				 $('main header h3').html("Get a Jump on Spring wear!");
+				 $('#logo').attr('src','images/spring.gif');
+				 $('#wear').attr('src','images/spring-wear.jpg');
+				 $("html").css("background-color","#2B7129");
+				break;
+				case'default':
+				$('main header h3').html("Outfitter for all Seasons");
+				$('#wear').attr('src','images/default.webp');
+				$('#logo').attr('src','images/four-seasons.gif'); 
+				break;
+				case'summer':
+				 $('main header h3').html("Be sure not to fizzle when the summer starts to sizzle!");
+				 $('#logo').attr('src','images/summer.gif');
+				 $('#wear').attr('src','images/summer-wear.jpg');
+				 $("html").css("background-color","#EBA52B");
+				break;
+
+				case'winter':
+				 $('main header h3').html("Hot fashion will keep me warm!");
+				 $('#logo').attr('src','images/winter.gif');
+				 $('#wear').attr('src','images/winter-wear.jpg');
+				 $("html").css("background-color","#005393");
+				break;
+				case'fall':
+				 $('main header h3').html("Break out the sweater!");
+				 $('#logo').attr('src','images/fall.gif');
+				 $('#wear').attr('src','images/fall-wear.jpg');
+				 $("html").css("background-color","#A81124");
+				break;
+				case'christmas':
+				 $('main header h3').html("Oh, jingle bells, jingle bells....");
+				 $('#logo').attr('src','images/Christmas.jpg');
+				 $('#wear').attr('src','images/Christmas-wear.jpg');
+				 $("html").css("background-color","#ff0000");
+				break;
+			}
+		});
+	});
+		//$("document").ready(function(){
+		$('#dateForm').submit(function(e){//handle form submission event
+            e.preventDefault();//stop default submission
+			var datetext = $('input[name=dateField]').val();//grab data from textbox
+			var formDate = new Date(datetext);//create a date from form input
+			var today = new Date();
+			
+			if($("input")
+			//Links https://www.jqueryscript.net/time-clock/Set-The-Data-Range-With-jQuery.html#:~:text=1.%20Insert%20the%20JavaScript%20file%20jquery.set-date-range.js%20after%20jQuery,the%20demo%20page%20or%20visit%20the%20official%20website.
+			
+			{
+				alert(datetext + " is in the future!");
+			}else{
+				alert(datetext + " is in the past!");
+			}
+		});
+    </script>
+	
+</body>
+</html>
