@@ -207,22 +207,38 @@
 			}
 		});
 	});
-		//$("document").ready(function(){
+		
+	//$("document").ready(function(){
 		$('#dateForm').submit(function(e){//handle form submission event
             e.preventDefault();//stop default submission
 			var datetext = $('input[name=dateField]').val();//grab data from textbox
 			var formDate = new Date(datetext);//create a date from form input
-			var today = new Date();
+			var summerStart = new Date('06/01/2021');
+			var summerEnd = new Date('09/31/2021');
+			var springStart = new Date('03/01/2021');
+			var springEnd = new Date('05/31/2021');
+			var fallStart = new Date('10/01/2021');
+			var fallEnd = new Date('11/30/2021');
+
 			
-			if($("input")
-			//Links https://www.jqueryscript.net/time-clock/Set-The-Data-Range-With-jQuery.html#:~:text=1.%20Insert%20the%20JavaScript%20file%20jquery.set-date-range.js%20after%20jQuery,the%20demo%20page%20or%20visit%20the%20official%20website.
-			
-			{
-				alert(datetext + " is in the future!");
-			}else{
-				alert(datetext + " is in the past!");
+			if(dateForm >= summerStart && dateForm <= summerEnd){
+				return 'summer'; 
 			}
+			else if(dateForm >= springStart && dateForm <=springEnd) {
+				return 'spring';
+
+			}
+			else if(dateForm >= fallStart && dateForm <= fallEnd) {
+				return 'fall';
+			
+			}
+			else {
+				return 'winter';
+			}
+				
+			
 		});
+		
     </script>
 	
 </body>
